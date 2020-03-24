@@ -150,6 +150,6 @@ class Shortener(http.server.BaseHTTPRequestHandler):
             self.wfile.write("Unknown site asked")
 
 if __name__ == '__main__':
-    server_address = ('', 8000)
+    server_address = ('', 8080)
     httpd = http.server.HTTPServer(server_address, Shortener)
     httpd.serve_forever()
